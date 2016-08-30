@@ -1,3 +1,11 @@
 /*
   Main Stylesheet
 */
+
+.articleAvatar {
+  width: 80px;
+}
+
+.commentAvatar {
+  width: 40px;
+}

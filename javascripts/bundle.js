@@ -21440,58 +21440,66 @@
 	        authorSelfie: "https://kafflick22.files.wordpress.com/2014/03/demi-l.jpg",
 	        commentAuthor: "Demi",
 	        time: "right meow",
-	        comment: "this article isnt that good"
+	        comment: "The Iron Yard?? i thought they were a coding school lol im pretty sure the pizza place was next to their billboard!"
 	      }, {
 	        id: 2,
 	        authorSelfie: "http://40.media.tumblr.com/95d6fe6e181be2d0a998cd28c79d3b28/tumblr_nd7y7fmxuG1r3i26so1_400.jpg",
 	        commentAuthor: "Too Fabulous 4 U",
 	        time: "ten minutes ago",
-	        comment: "i like dogs"
+	        comment: "I like dogs!!!"
 	      }, {
 	        id: 3,
 	        authorSelfie: "http://data.whicdn.com/images/254835513/large.jpg",
 	        commentAuthor: "pizza is life",
 	        time: "this morning",
-	        comment: "this article is not lit"
+	        comment: "OMG YEEEESSS they make the BEST pizza!!"
 	      }]
 	    };
 	  },
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'section',
-	      null,
-	      _react2.default.createElement(
-	        'article',
-	        null,
-	        _react2.default.createElement('img', { className: 'articleAvatar', src: 'http://straightfromthea.com/wp-content/uploads/2013/07/random-selfie.jpg', alt: 'best article author ever' }),
-	        _react2.default.createElement(
-	          'h2',
-	          null,
-	          'Mileeeeeeey'
-	        ),
-	        _react2.default.createElement(
-	          'time',
-	          null,
-	          'August 30, 2016'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-	        )
-	      ),
+	      { className: 'article__section' },
 	      _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'article__div' },
 	        _react2.default.createElement(
-	          'span',
+	          'article',
 	          null,
-	          ' like '
+	          _react2.default.createElement('img', { className: 'article__avatar', src: 'http://straightfromthea.com/wp-content/uploads/2013/07/random-selfie.jpg', alt: 'best article author ever' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'article__authorNtime' },
+	            _react2.default.createElement(
+	              'h2',
+	              { className: 'article__author' },
+	              'Mileeeeeeey'
+	            ),
+	            _react2.default.createElement(
+	              'time',
+	              { className: 'article__time' },
+	              'August 30, 2016'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'article__p' },
+	            'I just totally had the best pizza every!! It was made by The Iron Yard... at least i think? Anyways, the pizza was Bomb dot com!'
+	          )
 	        ),
 	        _react2.default.createElement(
-	          'span',
-	          null,
-	          ' comment '
+	          'div',
+	          { className: 'article__likeNcomment' },
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            ' like '
+	          ),
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            ' comment '
+	          )
 	        )
 	      ),
 	      this.state.comments.map(function (comment) {
@@ -21522,22 +21530,26 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      "section",
-	      null,
-	      _react2.default.createElement("img", { className: "commentAvatar", src: this.props.authorSelfie, alt: "commenters avatar" }),
+	      { className: "comment__section" },
+	      _react2.default.createElement("img", { className: "comment__avatar", src: this.props.authorSelfie, alt: "commenters avatar" }),
 	      _react2.default.createElement(
-	        "h3",
-	        null,
-	        this.props.commentAuthor
-	      ),
-	      _react2.default.createElement(
-	        "time",
-	        null,
-	        this.props.time
-	      ),
-	      _react2.default.createElement(
-	        "p",
-	        null,
-	        this.props.comment
+	        "div",
+	        { className: "comment__div" },
+	        _react2.default.createElement(
+	          "h3",
+	          { className: "comment__author" },
+	          this.props.commentAuthor
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          { className: "comment__p" },
+	          this.props.comment
+	        ),
+	        _react2.default.createElement(
+	          "time",
+	          { className: "comment__time" },
+	          this.props.time
+	        )
 	      )
 	    );
 	  }

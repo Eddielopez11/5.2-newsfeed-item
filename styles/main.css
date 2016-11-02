@@ -1,3 +1,71 @@
 /*
   Main Stylesheet
 */
+.article__section {
+  background-color: rgb(230, 230, 230);
+  font-family: sans-serif;
+  margin: auto;
+  padding: 10px;
+  width: 500px;
+}
+
+.article__div {
+  background-color: white;
+  border: solid 1px lightgrey;
+  padding: 10px;
+}
+
+.article__avatar {
+  width: 80px;
+}
+
+.article__authorNtime {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+.article__author {
+  margin: 10px 0;
+  color: rgba(0, 45, 179, .8);
+}
+
+.article__time {
+  color: grey;
+}
+
+.article__likeNcomment {
+  border-top: solid 1px lightgrey;
+  padding-top: 10px;
+}
+
+.comment__section {
+  background-color: rgb(242, 242, 242);
+  border: 1px solid  lightgrey;
+  padding: 10px;
+}
+
+.comment__avatar {
+  vertical-align: top;
+  width: 70px;
+}
+
+.comment__div {
+  display: inline-block;
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 390px
+}
+
+.comment__author {
+  margin: 0;
+}
+
+.comment__p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.comment__time {
+  color: grey;
+}
